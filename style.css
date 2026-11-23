@@ -623,6 +623,16 @@ footer {
   letter-spacing: -0.02em;
 }
 
+.cta-plan {
+  max-width: 36em;
+  margin: 16px 0 0;
+  font-size: 1.05rem;
+}
+
+.cta-plan strong {
+  color: #fff;
+}
+
 .cta .actions {
   justify-content: center;
 }
