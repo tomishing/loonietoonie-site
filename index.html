@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LoonieToonie: Expense Tracker</title>
-    <meta name="description" content="LoonieToonie: Expense Tracker, a household expense app that shows where your money goes." />
+    <meta
+      name="description"
+      content="LoonieToonie: Expense Tracker shows where your household's money actually goes. Scan receipts, import bank and card statements, and ask about your spending. Android app and web app, with your data in your own Google Drive."
+    />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,36 +18,98 @@
         <h1>LoonieToonie: Expense Tracker</h1>
       </header>
 
+      <p class="lead">See where your household's money actually goes.</p>
       <p>
-        LoonieToonie: Expense Tracker (LoonieToonie for short) is a household expense app. Scan your receipts, link your bank and credit card accounts, and see
-        where your money actually goes: by category, by store, and month by month.
+        Scan your receipts, import your bank and card statements, and LoonieToonie shows your spending by category, by
+        store, and month by month. No budgets to set up: it simply shows what you really spend.
       </p>
 
-      <div class="card">
-        <h2>What it does</h2>
-        <ul>
-          <li><strong>Scan receipts.</strong> The text is read on your phone; the app turns it into items and categories.</li>
-          <li><strong>Link bank and card accounts</strong> through Plaid, so purchases without a receipt are counted too.</li>
-          <li><strong>See patterns.</strong> Spending by category and store, compared with your usual month.</li>
-          <li><strong>Ask questions</strong> about your spending in plain language.</li>
-        </ul>
+      <div class="actions">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">Get it on Google Play</a>
+        <a class="button secondary" href="https://app.loonietoonietracker.com/">Open the web app</a>
+      </div>
 
-        <h2>Your data stays yours</h2>
+      <h2>One account, two ways in</h2>
+      <p>
+        The Android app and the web app are the same LoonieToonie. Sign in with the same Google account on both and you
+        see the same receipts and transactions, because both use the same spreadsheet in your Google Drive. A receipt
+        scanned on your phone shows up on your computer, and a change made on the web shows up in the app.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Android app</h3>
+          <p>
+            Made for the checkout line. Photograph a receipt with your camera; the text is read on your phone and turned
+            into items and categories.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Web app</h3>
+          <p>
+            Made for a bigger screen. Review and edit your spending, import statement files, and scan a receipt photo,
+            all from any browser on your computer or tablet.
+          </p>
+        </div>
+      </div>
+
+      <h2>What you can do</h2>
+      <ul class="features">
+        <li>
+          <strong>Scan receipts</strong> in English, French, and Japanese. Each item gets a category, so one receipt can
+          be split between groceries and household supplies.
+        </li>
+        <li>
+          <strong>Import bank and card statements</strong> (CSV or OFX/QFX files from your bank's website), so purchases
+          without a receipt are counted too. Charges are matched with the receipts you scanned, so nothing is counted
+          twice.
+        </li>
+        <li>
+          <strong>See patterns.</strong> Spending by category and store, and this month compared with your usual month.
+        </li>
+        <li>
+          <strong>Compare with similar households.</strong> Set your household type and province to see your spending
+          next to Statistics Canada's averages for households like yours.
+        </li>
+      </ul>
+
+      <h2>Just ask</h2>
+      <p>Ask about your spending in plain language, in your own language. The numbers come from your own records.</p>
+      <ul class="questions">
+        <li>“What did I spend the most on this month?”</li>
+        <li>“How does this month compare with my usual month?”</li>
+        <li>“How much did we spend on dining out since January?”</li>
+        <li>“Where could I cut back to save $500 a month?”</li>
+      </ul>
+      <p class="muted">Your conversations are saved in your spreadsheet too, so you can pick them up on either device.</p>
+
+      <h2>Your data stays yours</h2>
+      <div class="card">
         <p>
           Your receipts and transactions are saved in a spreadsheet and a folder in <strong>your own Google
           Drive</strong>. LoonieToonie can only see the files it created there. It has no database of your spending, it
-          shows no ads, and it never sells data.
+          shows no ads, and it never sells data. You can open the spreadsheet yourself at any time, and
+          <a href="delete.html">delete your data</a> whenever you like.
         </p>
       </div>
 
-      <p>
-        LoonieToonie is a personal project, currently used by a single household.
-        <a href="privacy.html">Privacy policy</a> ·
-        <a href="delete.html">Delete your data</a> ·
-        <a href="https://github.com/tomishing/Loonietoonie">Source code</a>
+      <p class="muted">
+        Bank sync through Plaid is available on the web app for invited households only, for now. The Android app uses
+        statement import.
       </p>
 
-      <footer>© 2026 LoonieToonie: Expense Tracker</footer>
+      <div class="actions">
+        <a class="button" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">Get it on Google Play</a>
+        <a class="button secondary" href="https://app.loonietoonietracker.com/">Open the web app</a>
+      </div>
+
+      <footer>
+        <p>
+          <a href="privacy.html">Privacy policy</a> ·
+          <a href="delete.html">Delete your data</a> ·
+          <a href="https://github.com/tomishing/Loonietoonie">Source code</a>
+        </p>
+        <p>© 2026 LoonieToonie: Expense Tracker. Google Play is a trademark of Google LLC.</p>
+      </footer>
     </main>
   </body>
 </html>
