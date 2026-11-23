@@ -6,110 +6,283 @@
     <title>LoonieToonie: Expense Tracker</title>
     <meta
       name="description"
-      content="LoonieToonie: Expense Tracker shows where your household's money actually goes. Scan receipts, import bank and card statements, and ask about your spending. Android app and web app, with your data in your own Google Drive."
+      content="LoonieToonie: Expense Tracker shows where your household's money actually goes. Made for Canadian households: scan receipts, import bank and card statements, and ask about your spending. Android app and web app, with your data in your own Google Drive."
     />
+    <meta property="og:title" content="LoonieToonie: Expense Tracker" />
+    <meta property="og:description" content="See where your household's money actually goes." />
+    <meta property="og:image" content="https://loonietoonietracker.com/img/patterns.webp" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="preload" href="fonts/plus-jakarta-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
-    <main>
-      <header>
-        <img class="logo" src="loon-badge.png" alt="" width="56" height="56" />
-        <h1>LoonieToonie: Expense Tracker</h1>
-      </header>
-
-      <p class="lead">See where your household's money actually goes.</p>
-      <p>
-        Scan your receipts, import your bank and card statements, and LoonieToonie shows your spending by category, by
-        store, and month by month. No budgets to set up: it simply shows what you really spend.
-      </p>
-
-      <div class="actions">
-        <a class="button" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">Get it on Google Play</a>
-        <a class="button secondary" href="https://app.loonietoonietracker.com/">Open the web app</a>
-      </div>
-
-      <h2>One account, two ways in</h2>
-      <p>
-        The Android app and the web app are the same LoonieToonie. Sign in with the same Google account on both and you
-        see the same receipts and transactions, because both use the same spreadsheet in your Google Drive. A receipt
-        scanned on your phone shows up on your computer, and a change made on the web shows up in the app.
-      </p>
-      <div class="grid">
-        <div class="card">
-          <h3>Android app</h3>
-          <p>
-            Made for the checkout line. Photograph a receipt with your camera; the text is read on your phone and turned
-            into items and categories.
-          </p>
-        </div>
-        <div class="card">
-          <h3>Web app</h3>
-          <p>
-            Made for a bigger screen. Review and edit your spending, import statement files, and scan a receipt photo,
-            all from any browser on your computer or tablet.
-          </p>
+  <body class="home">
+    <nav class="topbar">
+      <div class="wrap topbar-inner">
+        <a class="brand" href="./">
+          <img src="loon-badge.png" alt="" width="36" height="36" />
+          <span>LoonieToonie</span>
+        </a>
+        <div class="topbar-links">
+          <a href="#features">Features</a>
+          <a href="#canada">Canada</a>
+          <a href="#privacy">Privacy</a>
+          <a class="pill" href="https://app.loonietoonietracker.com/">Open web app</a>
         </div>
       </div>
+    </nav>
 
-      <h2>What you can do</h2>
-      <ul class="features">
-        <li>
-          <strong>Scan receipts</strong> in English, French, and Japanese. Each item gets a category, so one receipt can
-          be split between groceries and household supplies.
-        </li>
-        <li>
-          <strong>Import bank and card statements</strong> (CSV or OFX/QFX files from your bank's website), so purchases
-          without a receipt are counted too. Charges are matched with the receipts you scanned, so nothing is counted
-          twice.
-        </li>
-        <li>
-          <strong>See patterns.</strong> Spending by category and store, and this month compared with your usual month.
-        </li>
-        <li>
-          <strong>Compare with similar households.</strong> Set your household type and province to see your spending
-          next to Statistics Canada's averages for households like yours.
-        </li>
-      </ul>
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Made for Canadian households</p>
+          <h1>See where your household's money actually goes.</h1>
+          <p class="hero-lead">
+            Scan receipts, import your bank and card statements, and see your spending by category, by store, and month
+            by month. No budgets to set up. Just what you really spend.
+          </p>
+          <div class="actions">
+            <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3.5v17l9-8.5-9-8.5Zm10.4 7.2 2.6-2.5-10.5-6 7.9 8.5Zm0 2.6-7.9 8.5 10.5-6-2.6-2.5Zm4-3.6-2.9 2.3 2.9 2.3 2.4-1.4a1 1 0 0 0 0-1.8l-2.4-1.4Z" fill="currentColor"/></svg>
+              Get it on Google Play
+            </a>
+            <a class="btn btn-ghost" href="https://app.loonietoonietracker.com/">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              Open the web app
+            </a>
+          </div>
+          <ul class="hero-points">
+            <li>Made for Canada</li>
+            <li>Android and web</li>
+            <li>Your data in your Google Drive</li>
+            <li>No ads</li>
+          </ul>
+        </div>
+        <div class="hero-phone">
+          <div class="phone">
+            <img
+              src="img/patterns.webp"
+              width="600"
+              height="1200"
+              alt="Spending patterns screen: CA$889.80 spent this month, 12% less than the usual month, with notable changes by category"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h2>Just ask</h2>
-      <p>Ask about your spending in plain language, in your own language. The numbers come from your own records.</p>
-      <ul class="questions">
-        <li>“What did I spend the most on this month?”</li>
-        <li>“How does this month compare with my usual month?”</li>
-        <li>“How much did we spend on dining out since January?”</li>
-        <li>“Where could I cut back to save $500 a month?”</li>
-      </ul>
-      <p class="muted">Your conversations are saved in your spreadsheet too, so you can pick them up on either device.</p>
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="kicker">One account, two ways in</p>
+        <h2>The same LoonieToonie on your phone and your computer</h2>
+        <p class="section-lead">
+          Sign in with the same Google account on both. They share one spreadsheet in your Google Drive, so a receipt
+          scanned at the checkout shows up on your laptop, and a change made on the web shows up in the app.
+        </p>
 
-      <h2>Your data stays yours</h2>
-      <div class="card">
-        <p>
-          Your receipts and transactions are saved in a spreadsheet and a folder in <strong>your own Google
-          Drive</strong>. LoonieToonie can only see the files it created there. It has no database of your spending, it
-          shows no ads, and it never sells data. You can open the spreadsheet yourself at any time, and
-          <a href="delete.html">delete your data</a> whenever you like.
+        <div class="flow">
+          <div class="flow-node">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Android app</h3>
+            <p>Made for the checkout line. Photograph a receipt; the text is read on your phone and turned into items and categories.</p>
+          </div>
+          <div class="flow-link" aria-hidden="true"><span></span></div>
+          <div class="flow-node flow-center">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M4 9h16M4 15h16M10 3v18" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Your spreadsheet</h3>
+            <p>In your own Google Drive. Both apps read and write it, and you can open it yourself any time.</p>
+          </div>
+          <div class="flow-link" aria-hidden="true"><span></span></div>
+          <div class="flow-node">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 21h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Web app</h3>
+            <p>Made for a bigger screen. Review and edit, import statement files, and scan receipt photos from any browser.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="wrap feature">
+        <div class="feature-text">
+          <p class="kicker">Patterns</p>
+          <h2>Know where the money goes</h2>
+          <p>
+            Every month at a glance: what you spent, how it compares with last month and with your usual month, and which
+            categories changed the most. Tap a category to see its subcategories.
+          </p>
+          <ul class="checks">
+            <li>Spending by category and by store</li>
+            <li>This month next to your usual month</li>
+            <li>Compare with Statistics Canada's averages for households like yours</li>
+          </ul>
+        </div>
+        <div class="feature-media">
+          <div class="phone">
+            <img src="img/categories.webp" width="600" height="1200" loading="lazy" alt="By category screen: this month's spending per category next to the usual month" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap feature reverse">
+        <div class="feature-text">
+          <p class="kicker">Receipts and statements</p>
+          <h2>Every purchase, with or without a receipt</h2>
+          <p>
+            Scan receipts in English, French, or Japanese and each item gets its own category, so one Costco run can be
+            split between groceries and household supplies. Import the statements you download from your bank to catch
+            everything else.
+          </p>
+          <ul class="checks">
+            <li>CSV and OFX/QFX statement files from any bank or card</li>
+            <li>Charges are matched with your receipts, so nothing counts twice</li>
+            <li>Categories are suggested for you, and remembered when you change them</li>
+          </ul>
+          <div class="soon">
+            <span class="soon-tag">Coming soon</span>
+            <p>
+              <strong>Automatic bank sync on the web app.</strong> Connect your bank and card accounts once, and new
+              charges come in on their own, with no statement files to download.
+            </p>
+          </div>
+        </div>
+        <div class="feature-media pair">
+          <div class="phone back">
+            <img src="img/import.webp" width="600" height="1200" loading="lazy" alt="Import a statement screen: choose an account and a CSV or OFX file" />
+          </div>
+          <div class="phone front">
+            <img src="img/bank.webp" width="600" height="1200" loading="lazy" alt="Transactions screen: bank and card charges with stores, dates, amounts, and categories" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="canada">
+      <div class="wrap">
+        <p class="kicker">Built for Canada</p>
+        <h2>Made for the way Canadian households spend</h2>
+        <p class="section-lead">From loonies and toonies to Québec receipts, LoonieToonie is designed around Canada.</p>
+        <div class="tiles canada">
+          <div class="tile">
+            <span class="tile-mark">$</span>
+            <h3>Canadian dollars first</h3>
+            <p>Amounts are in CAD by default, with other currencies kept separate when you travel.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-mark">FR</span>
+            <h3>English and French</h3>
+            <p>Receipts are read in English and French, so receipts from Québec work too.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-mark">%</span>
+            <h3>Statistics Canada comparison</h3>
+            <p>See your spending next to the averages for households like yours in your province.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-mark">⇩</span>
+            <h3>Canadian bank files</h3>
+            <p>Import the CSV or OFX/QFX ("Quicken" or "Microsoft Money") downloads Canadian banks offer.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-mark">🚇</span>
+            <h3>Knows local services</h3>
+            <p>Compass, PRESTO, TTC, STM, OC Transpo and other public services are categorized for you.</p>
+          </div>
+          <div class="tile">
+            <span class="tile-mark">🍁</span>
+            <h3>Server in Canada</h3>
+            <p>LoonieToonie's own server runs in Toronto. Your records stay in your Google Drive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap feature">
+        <div class="feature-text">
+          <p class="kicker">Ask</p>
+          <h2>Just ask, in your own words</h2>
+          <p>
+            Ask about your spending in plain language, in your own language. The numbers are worked out from your own
+            records, and conversations are saved so you can pick them up on either device.
+          </p>
+          <div class="bubbles">
+            <span>What did I spend the most on this month?</span>
+            <span>How does this month compare with my usual month?</span>
+            <span>How much did we spend on dining out since January?</span>
+            <span>Where could I cut back to save $500 a month?</span>
+          </div>
+        </div>
+        <div class="feature-media">
+          <div class="phone">
+            <img src="img/ask.webp" width="600" height="1200" loading="lazy" alt="Ask screen: a question about October groceries answered with totals per store" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="privacy">
+      <div class="wrap">
+        <p class="kicker">Privacy</p>
+        <h2>Your data stays yours</h2>
+        <div class="tiles">
+          <div class="tile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <h3>In your Google Drive</h3>
+            <p>Receipts and transactions are saved in a spreadsheet and folder in your own Drive.</p>
+          </div>
+          <div class="tile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>Only its own files</h3>
+            <p>LoonieToonie can see only the files it created there, nothing else in your Drive.</p>
+          </div>
+          <div class="tile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><path d="m6 6 12 12" stroke="currentColor" stroke-width="2"/></svg>
+            <h3>No ads, no selling</h3>
+            <p>There is no database of your spending on our side, and your data is never sold.</p>
+          </div>
+          <div class="tile">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <h3>Delete any time</h3>
+            <p><a href="delete.html">Delete your data</a> whenever you like. Read the <a href="privacy.html">privacy policy</a>.</p>
+          </div>
+        </div>
+        <p class="note">
+          Automatic bank sync through Plaid is coming to the web app; for now it is open to invited households only. The
+          Android app uses statement import.
         </p>
       </div>
+    </section>
 
-      <p class="muted">
-        Bank sync through Plaid is available on the web app for invited households only, for now. The Android app uses
-        statement import.
-      </p>
-
-      <div class="actions">
-        <a class="button" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">Get it on Google Play</a>
-        <a class="button secondary" href="https://app.loonietoonietracker.com/">Open the web app</a>
+    <section class="cta">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap cta-inner">
+        <img src="loon-badge.png" alt="" width="72" height="72" />
+        <h2>Start seeing your spending clearly</h2>
+        <div class="actions">
+          <a class="btn btn-light" href="https://play.google.com/store/apps/details?id=com.loonietoonie.app">Get it on Google Play</a>
+          <a class="btn btn-ghost" href="https://app.loonietoonietracker.com/">Open the web app</a>
+        </div>
       </div>
+    </section>
 
-      <footer>
+    <footer class="site-footer">
+      <div class="wrap">
         <p>
           <a href="privacy.html">Privacy policy</a> ·
           <a href="delete.html">Delete your data</a> ·
           <a href="https://github.com/tomishing/Loonietoonie">Source code</a>
         </p>
         <p>© 2026 LoonieToonie: Expense Tracker. Google Play is a trademark of Google LLC.</p>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>
