@@ -256,6 +256,24 @@ footer {
   height: 20px;
 }
 
+/* Google's badge PNG includes its own clear space (41 of 250 px on each
+   side); the negative margin lines the visible badge up with the buttons. */
+.play-badge {
+  display: inline-block;
+  margin: -14px;
+  line-height: 0;
+  transition: transform 0.15s ease;
+}
+
+.play-badge:hover {
+  transform: translateY(-2px);
+}
+
+.play-badge img {
+  width: auto;
+  height: 86px;
+}
+
 .btn-light {
   background: #fff;
   color: #64224d;
@@ -610,7 +628,7 @@ footer {
   text-align: center;
 }
 
-.cta-inner img {
+.cta-inner > img {
   border-radius: 50%;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
@@ -746,5 +764,9 @@ footer {
   .btn {
     justify-content: center;
     width: 100%;
+  }
+
+  .actions {
+    justify-content: center;
   }
 }
